@@ -42,10 +42,11 @@
         </div>
       </nav>
       <script src="Fonksiyonlar.js"></script>
-      <form method="post" action="ad.php" onsubmit="return giris_kontrol()">
+      <div class="container "> 
+      <form method="post" action="ad.php" name="Giriş" onsubmit="return giris_kontrol()">
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Ad Soyad</label>
-          <input type="text" class="form-control" id="exampleInputEmail1" name="AdıSoyadı">
+          <label for="exampleInputEmail1" class="form-label">Email</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" name="Kullanıcı">
           
         </div>
         <div class="mb-3">
@@ -56,7 +57,7 @@
         <button type="submit" class="btn btn-primary">Giriş yap</button>
       </form>
       
-    
+      </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
   </body>
 </html>

@@ -26,16 +26,31 @@ function form_denetleme()
         alert("Geçerli Email girin !!!");
         cevap= false;
     }
-    else if (form2.indexOf('@')== 0)
-    {
-        alert("Geçerli Email girin !!!");
-        cevap= false;
-    }
+   
    return cevap;
 
 }
 function giris_kontrol()
 {
-    var cevap2=false;
+    var cevap2=true;
+    var giris2="";
+    var giris1="";
+    giris1= document.forms["Giriş"]["sifre"].value;
+    giris2= document.forms["Giriş"]["Kullanıcı"].value;
+    if(giris1=="")
+    {
+        alert("Şifre girin !!!");
+        cevap2= false;
+    }
+    else if(giris1.length<6)
+    {
+        alert("Şifre en az 6 haneli olmalı !!!");
+        cevap2= false;
+    }
+    else if (giris2.indexOf('@')== -1)
+    {
+        alert("Geçerli Email girin !!!");
+        cevap2= false;
+    }
     return cevap2;
 }
